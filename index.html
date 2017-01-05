@@ -8,9 +8,23 @@
   <h1>Here's a random user</h1>
 
 <!-- output div -->
-
+<div id="putstuffhere"></div>
 <!-- handlebars script -->
+<script id="theUser" type="text/x-handlebars-template">
+<div>
+<img src="{{results.0.picture.medium}}">
+        <p>Name:{{results.0.name.first}} {{results.0.name.last}}</p>
+        <p>Address:  {{results.0.location.street}}
+        city: {{results.0.location.city}}
+        state: {{results.0.location.state}}
+        zipcode: {{results.0.location.postcode}}</p>
+        <p>email: {{results.0.email}}</p></div>
+</script>
+
 
 <!-- regular javascript scripts -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/handlebars/handlebars.js"></script>
+<script type="text/javascript" src="myJavascript.js"></script>
 </body>
 </html>
