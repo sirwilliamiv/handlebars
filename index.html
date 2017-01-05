@@ -3,25 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Handlebars Exercise</title>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Here's a random user</h1>
+<div class="container">
+
+  <!-- <h1>Here's a random user</h1> -->
 
 <!-- output div -->
 <div id="putstuffhere"></div>
 <!-- handlebars script -->
 <script id="theUser" type="text/x-handlebars-template">
 <div>
-<img src="{{results.0.picture.medium}}">
+    <img src="{{results.0.picture.large}}">
         <p>Name:{{results.0.name.first}} {{results.0.name.last}}</p>
-        <p>Address:  {{results.0.location.street}}
-        city: {{results.0.location.city}}
-        state: {{results.0.location.state}}
-        zipcode: {{results.0.location.postcode}}</p>
-        <p>email: {{results.0.email}}</p></div>
+        <p>Address:  {{results.0.location.street}}</p>
+        <p>city: {{results.0.location.city}}</p>
+        <p>state: {{results.0.location.state}}</p>
+        <p>zipcode: {{results.0.location.postcode}}</p>
+        <p>email: {{results.0.email}}</p>
+  </div>
 </script>
 
 
+</div>
 <!-- regular javascript scripts -->
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="bower_components/handlebars/handlebars.js"></script>

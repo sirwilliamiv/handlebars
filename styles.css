@@ -1,0 +1,15 @@
+body {
+  background-color: lightgrey;
+}
+.container {
+  text-align: center;
+}
+p {
+  padding: 1rem;
+  font-size: 3rem;
+}
+img {
+  padding-top: 3rem;
+  min-width: 5rem;
+  min-height: 5rem;
+}

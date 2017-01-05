@@ -45,7 +45,7 @@ var boostUser = new Promise(function(resolve, reject){
       dataType: 'json',
       success: function(data) {
         resolve(data)
-        // console.log(data);
+        console.log(data);
       }
     });
 })
@@ -57,3 +57,4 @@ var boostUser = new Promise(function(resolve, reject){
     // console.log("hey", boostUser)
     waitForTheStuf()
   })
+// ==============================================
